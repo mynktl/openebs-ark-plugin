@@ -7,7 +7,7 @@ import (
 
 func main() {
 	arkplugin.NewServer(arkplugin.NewLogger()).
-		RegisterBlockStore("cstor", cstorSnapPlugin).
+		RegisterBlockStore("cstor-blockstore", cstorSnapPlugin).
 		Serve()
 }
 
